@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+@if (User.Identity.IsAuthenticated)
+{
+    <div>
+    <button type="button" class="btn btn-info" onclick="location.href='Home/HealthCheckData'">Show Health Checks!</button>
+    </div>
+} else 
+{
+    <h1 class="display-4">Welcome</h1>
+    <div>
+        Please, log in.
+    </div>
+}
+
+</div>

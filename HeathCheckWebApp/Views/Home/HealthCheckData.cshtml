@@ -1,0 +1,33 @@
+﻿@model HeathCheckWebApp.Models.HealthCheckData[]
+@{
+    ViewData["Title"] = "Health Checks";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Max blood pressure</th>
+                <th>Min blood pressure</th>
+                <th>Hemoglobin</th>
+                <th>Blood glucose</th>
+                <th>Cholesterol</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var check in @Model)
+            {
+                <tr>
+                    <td>@check.Date.ToShortDateString()</td>
+                    <td>@check.MaxBloodPressure</td>
+                    <td>@check.MinBloodPressure</td>
+                    <td>@check.Hemoglobin</td>
+                    <td>@check.BloodGlucose</td>
+                    <td>@check.Cholesterol</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
