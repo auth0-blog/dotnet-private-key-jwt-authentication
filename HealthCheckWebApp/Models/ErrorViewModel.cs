@@ -1,4 +1,4 @@
-namespace HeathCheckWebApp.Models;
+namespace HealthCheckWebApp.Models;
 
 public class ErrorViewModel
 {

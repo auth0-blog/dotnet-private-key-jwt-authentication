@@ -9,7 +9,7 @@ public static class SwaggerExtensions
     services.AddSwaggerGen(options =>
     {
       options.SwaggerDoc("v1", new OpenApiInfo { 
-        Title = "HeathCheckApi",
+        Title = "HealthCheckApi",
         Description = "Learn how to protect your .NET applications with Auth0",
         Contact = new OpenApiContact {
           Name = ".NET Identity with Auth0",

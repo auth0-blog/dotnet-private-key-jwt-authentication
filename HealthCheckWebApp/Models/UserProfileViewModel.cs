@@ -1,4 +1,4 @@
-namespace HeathCheckWebApp.ViewModels;
+namespace HealthCheckWebApp.ViewModels;
 
 public class UserProfileViewModel
 {
