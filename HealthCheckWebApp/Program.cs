@@ -1,12 +1,20 @@
 using Auth0.AspNetCore.Authentication;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
+using System.Security.Cryptography;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var cryptoProvider = new RSACryptoServiceProvider();
+cryptoProvider.ImportFromPem(File.ReadAllText("app_keys.pem"));
+var securityKey = new RsaSecurityKey(cryptoProvider);
 
 builder.Services
     .AddAuth0WebAppAuthentication(options => {
       options.Domain = builder.Configuration["Auth0:Domain"];
       options.ClientId = builder.Configuration["Auth0:ClientId"];
-      options.ClientSecret = builder.Configuration["Auth0:ClientSecret"];
+      options.ClientAssertionSecurityKey = securityKey;
       options.Scope = "openid profile email";
     })
     .WithAccessToken(options =>

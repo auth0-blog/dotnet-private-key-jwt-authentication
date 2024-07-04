@@ -1,9 +1,9 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using HeathCheckWebApp.Models;
+using HealthCheckWebApp.Models;
 using Microsoft.AspNetCore.Authorization;
 
-namespace HeathCheckWebApp.Controllers;
+namespace HealthCheckWebApp.Controllers;
 
 public class HomeController : Controller
 {

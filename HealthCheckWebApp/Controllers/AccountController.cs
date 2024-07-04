@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
-using HeathCheckWebApp.ViewModels;
+using HealthCheckWebApp.ViewModels;
 
 public class AccountController : Controller
 {
