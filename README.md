@@ -6,6 +6,8 @@ This repository contains two projects:
 Check out the article [Use Private Key JWTs to Authenticate Your .NET Application](https://auth0.com/blog/use-private-key-jwt-to-authenticate-dotnet-app/) for the implementation details.
 
 # Requirements
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fauth0-blog%2Fdotnet-private-key-jwt-authentication.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fauth0-blog%2Fdotnet-private-key-jwt-authentication?ref=badge_shield)
+
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) installed on your machine
 - Visual Studio 2022 (optional)
@@ -45,3 +47,6 @@ Check out the article [Use Private Key JWTs to Authenticate Your .NET Applicatio
 7. Type `dotnet run` in a new terminal window to launch the application.
 
 8. Point your browser to the [https://localhost:7062](https://localhost:7062) address.
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fauth0-blog%2Fdotnet-private-key-jwt-authentication.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fauth0-blog%2Fdotnet-private-key-jwt-authentication?ref=badge_large)
